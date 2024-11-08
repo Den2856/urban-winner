@@ -62,12 +62,10 @@
                             <?php
                             require '../../../config/db.php';
                     
-                            // SQL-запрос на получение URL видео
                             $sql = "SELECT wayto FROM vids WHERE season = 1 and serie = 1"; // Укажите нужный ID видео
                             $result = $conn->query($sql);
                     
                             if ($result->num_rows > 0) {
-                                // Получение URL видео
                                 $row = $result->fetch_assoc();
                                 $video_url = $row['wayto'];
                                 echo '<video width="1200px" height="420px" controls="controls" src="' . $video_url . '" type="video/mp4"></video>';
