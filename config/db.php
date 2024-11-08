@@ -2,8 +2,8 @@
 // Настройки подключения к базе данных
 $host = 'MariaDB-11.2';
 $user = 'root';
-$password = ''; // Попробуйте оставить пустым
-$dbname = 'videos'; // Название вашей базы данных
+$password = '';
+$dbname = 'videos';
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
